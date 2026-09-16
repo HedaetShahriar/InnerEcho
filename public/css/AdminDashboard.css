@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+.manrope-font {
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+html {
+    background-color: #FCF8F4;
+}
+*{
+    margin: 0;
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color:#EC744A ;
+    padding: 12px 35px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    border:none;
+    border-radius: 25px;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Nev Styles */
+.nav-bar{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    gap: 15px;
+}
+.nav-links{
+    list-style: none;
+    gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-buttons{
+    align-items: center;
+    gap:10px;
+    font-size: 22px;
+}
+
+/* Icon Styling */
+.button{
+    width: 50px; 
+    height: 50px;
+    border: 2px solid #4c9164; 
+    border-radius: 50%; 
+    background-color: white;
+    cursor: pointer;
+}
+.button i {
+    font-size: 20px;
+    color:#4c9164;
+}
+
+.admin-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.admin-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+.admin-section {
+    margin-bottom: 2.5rem;
+}
+.section-header {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.admin-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.admin-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+.admin-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.admin-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+.admin-card button {
+    background: #EC744A;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+.admin-card button:hover {
+    background: #d65c3a;
+}
+
+.footer-logo{
+    display: flex;
+    gap: 15px;
+    color: white;
+    align-items: center;
+
+}
+footer{
+    background: #222; 
+}
+.logo-footer{
+    width: 50px;
+    height: 50px; 
+}
+.footer-container{
+    display: flex;
+    max-width: 1280px;
+    align-items: center;  
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+}
+.footer-description{
+    max-width: 350px;
+    color: white;
+}
+
+/* Dashboard Styles */
+.dashboard-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+.dashboard-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.dashboard-header p {
+    color: #666;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.stat-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+.stat-card i {
+    font-size: 2rem;
+    color: #4c9164;
+    margin-bottom: 0.5rem;
+}
+.stat-card h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+.stat-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+.stat-card a {
+    color: #EC744A;
+    text-decoration: none;
+    font-weight: 600;
+}
+.stat-card a:hover {
+    text-decoration: underline;
+}
+
+/* Quick Actions */
+.quick-actions h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.action-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+.action-card:hover {
+    transform: translateY(-5px);
+}
+.action-card i {
+    font-size: 2.5rem;
+    color: #4c9164;
+    margin-bottom: 1rem;
+}
+.action-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+}
+

@@ -1,0 +1,13 @@
+{
+    "name": "innerecho/innerecho",
+    "description": "InnerEcho - Mental Health Counseling Platform",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=8.2"
+    }
+}

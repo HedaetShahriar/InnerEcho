@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #f0faf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+.container {
+    display: flex;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.04),
+        0 4px 12px rgba(0, 0, 0, 0.06),
+        0 24px 48px rgba(0, 0, 0, 0.08);
+    max-width: 960px;
+    width: 100%;
+    min-height: 640px;
+}
+
+/* ── Illustration Side ── */
+.illustration {
+    background: linear-gradient(160deg, #EC744A 0%, #d4553a 50%, #b8442e 100%);
+    padding: 56px 48px;
+    flex: 0 0 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.illustration::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -40%;
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.illustration::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -30%;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.illustration img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+.illustration .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 32px;
+}
+
+.illustration .brand img {
+    width: 36px;
+    height: 36px;
+    filter: none;
+    drop-shadow: none;
+}
+
+.illustration .brand span {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.02em;
+}
+
+.illustration .ill-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.illustration .ill-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.illustration .ill-text p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* ── Form Side ── */
+.form-container {
+    flex: 1;
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.form-container > p {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 32px;
+}
+
+#message {
+    margin-bottom: 8px;
+}
+
+#message.error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+}
+
+.input-group label .field-error {
+    color: #dc2626;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    color: #1a1a2e;
+    background: #fafafa;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #9ca3af;
+}
+
+.input-group input:focus {
+    border-color: #EC744A;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(236, 116, 74, 0.1);
+}
+
+.input-group input:hover:not(:focus) {
+    border-color: #d1d5db;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+
+.show-password input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #EC744A;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.show-password label {
+    font-size: 13px;
+    color: #6b7280;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-signup {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #EC744A 0%, #d4553a 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.btn-signup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #f08060 0%, #EC744A 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-signup:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(236, 116, 74, 0.35);
+}
+
+.btn-signup:hover::before {
+    opacity: 1;
+}
+
+.btn-signup:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(236, 116, 74, 0.25);
+}
+
+.btn-signup span {
+    position: relative;
+    z-index: 1;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.form-footer a {
+    color: #EC744A;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.form-footer a:hover {
+    color: #d4553a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .container {
+        flex-direction: column;
+        border-radius: 0;
+        min-height: 100vh;
+        box-shadow: none;
+    }
+
+    .illustration {
+        flex: none;
+        padding: 40px 28px;
+        min-height: 200px;
+    }
+
+    .illustration img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .illustration .ill-text {
+        margin-top: 20px;
+    }
+
+    .form-container {
+        padding: 32px 28px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

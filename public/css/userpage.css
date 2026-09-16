@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #FCF8F4;
+}
+.display-flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+/* Navigation Bar */
+.btn-primary{
+    background-color:#EC744A ;
+    padding: 12px 35px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    border:none;
+    border-radius: 25px;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Nev Styles */
+.nav-bar{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    gap: 15px;
+}
+.nav-links{
+    list-style: none;
+    gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-buttons{
+    align-items: center;
+    gap:10px;
+    font-size: 22px;
+}
+
+/* Icon Styling */
+.button{
+    width: 50px; 
+    height: 50px;
+    border: 2px solid #4c9164; 
+    border-radius: 50%; 
+    background-color: white;
+    cursor: pointer;
+}
+.button i {
+    font-size: 20px;
+    color:#4c9164;
+}
+/* User Dashboard */
+.user-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 90%;
+}
+
+.dashboard-content {
+    max-width: 50%;
+}
+
+.dashboard-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-content .username {
+    color: #EC744A;
+}
+
+.dashboard-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.dashboard-img {
+    width: 300px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #EC744A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #d35f3a;
+}
+
+.btn-secondary {
+    background-color: #555;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+/* Journal Entries */
+.journal-entries {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.journal-entries h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.journal-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.journal-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+.journal-card h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.journal-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Journal Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5% auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+label {
+    font-weight: bold;
+}
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+/* self assesment */
+
+.scale {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusted for balanced spacing */
+    margin-top: 5px;
+}
+.scale label {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label {
+    background: #EC744A;
+    border-color: #EC744A;
+    color: white;
+}
+/* Footer */
+.footer-logo{
+    display: flex;
+    gap: 15px;
+    color: white;
+    align-items: center;
+
+}
+footer{
+    background: #222; 
+}
+.logo-footer{
+    width: 50px;
+    height: 50px; 
+}
+.footer-container{
+    display: flex;
+    max-width: 1280px;
+    align-items: center;  
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+}
+.footer-description{
+    max-width: 350px;
+    color: white;
+}

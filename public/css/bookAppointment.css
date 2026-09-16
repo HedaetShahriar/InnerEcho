@@ -1,0 +1,131 @@
+html {
+    background-color: #FCF8F4;
+}
+html {
+    background-color: #FCF8F4;
+}
+*{
+    margin: 0;
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color:#EC744A ;
+    padding: 12px 35px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    border:none;
+    border-radius: 25px;
+}
+.nav-bar{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    gap: 15px;
+}
+.nav-links{
+    list-style: none;
+    gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color:white;
+}
+
+/* Icon Styling */
+.button{
+    width: 50px; 
+    height: 50px;
+    border: 2px solid #4c9164; 
+    border-radius: 50%; 
+    background-color: white;
+    cursor: pointer;
+}
+.button i {
+    font-size: 20px;
+    color:#4c9164;
+}
+.banner{
+    max-width: 1280px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding-bottom: 20px;
+}
+.appointment-form {
+    background: white;
+    padding: 30px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-submit {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.footer-logo{
+    display: flex;
+    gap: 15px;
+    color: white;
+    align-items: center;
+
+}
+footer{
+    background: #222; 
+}
+.logo-footer{
+    width: 50px;
+    height: 50px; 
+}
+.footer-container{
+    display: flex;
+    max-width: 1280px;
+    align-items: center;  
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+}
+.footer-description{
+    max-width: 350px;
+    color: white;
+}

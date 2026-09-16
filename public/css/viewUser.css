@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+.manrope-font {
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+html {
+    background-color: #FCF8F4;
+}
+*{
+    margin: 0;
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color:#EC744A ;
+    padding: 12px 35px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    border:none;
+    border-radius: 25px;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Nev Styles */
+.nav-bar{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    gap: 15px;
+}
+.nav-links{
+    list-style: none;
+    gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-buttons{
+    align-items: center;
+    gap:10px;
+    font-size: 22px;
+}
+
+/* Icon Styling */
+.button{
+    width: 50px; 
+    height: 50px;
+    border: 2px solid #4c9164; 
+    border-radius: 50%; 
+    background-color: white;
+}
+.button i {
+    font-size: 20px;
+    color:#4c9164;
+}
+/* table  */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+    background-color: #d3e8bf;
+}
+
+.admin-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.admin-card{
+    margin-bottom: 70px;
+}
+
+.search-bar {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    width: 500px; 
+    font-size: 16px;
+}
+.delete-btn { 
+    background-color: red; 
+    color: white; 
+    border: none; 
+    padding: 5px; 
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.save-btn { 
+    background-color: green; 
+    color: white; 
+    border: none; 
+    padding: 5px; 
+    cursor: pointer;
+    border-radius: 5px; 
+}
+.action-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.footer-logo{
+    display: flex;
+    gap: 15px;
+    color: white;
+    align-items: center;
+
+}
+footer{
+    background: #222; 
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.logo-footer{
+    width: 50px;
+    height: 50px; 
+}
+.footer-container{
+    display: flex;
+    max-width: 1280px;
+    align-items: center;  
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+}
+.footer-description{
+    max-width: 350px;
+    color: white;
+}
